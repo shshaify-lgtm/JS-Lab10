@@ -9,7 +9,7 @@ class Product {
         return this.price * this.quantity;
     }
 
-    toSting() {
+    toString() {
         return `Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
     // professor can you tell me where I can read more about (``) 
@@ -20,7 +20,7 @@ class PerishableProduct extends Product {
         super(name, price, quantity);
         this.expirationDate = expirationDate;
     }
-    toSting() {
-        return `${super.toSting()}, Expiration Date: ${this.expirationDate}`;
+    toString() {
+        return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
     }
 }
