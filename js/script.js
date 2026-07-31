@@ -64,3 +64,5 @@ console.log("Total Price: $" + store.getInventoryValue().toFixed(2));
 Product.applyDiscount(store.inventory, 0.15);
 
 console.log("Total Price Afer Discounts: $" + store.getInventoryValue().toFixed(2));
+
+// I dont understand the find product part I will do it as you told me to print 1 spesific Item
