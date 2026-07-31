@@ -11,5 +11,7 @@ class Product {
 
     toSting(){
         return `Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
-    }
+    }// professor can you tell me where I can read more about (``)
+
+    
 }
