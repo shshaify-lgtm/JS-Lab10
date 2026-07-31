@@ -10,6 +10,6 @@ class Product {
     }
 
     toSting(){
-        return Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity};
+        return `Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
 }
