@@ -8,4 +8,8 @@ class Product {
     getTotalValue(){
         return this.price * this.quantity;
     }
+
+    toSting(){
+        return Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity};
+    }
 }
