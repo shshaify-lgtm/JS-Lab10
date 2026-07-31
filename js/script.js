@@ -24,3 +24,7 @@ class PerishableProduct extends Product {
         return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
     }
 }
+
+static applyDiscount(products, discount) {
+    
+}
