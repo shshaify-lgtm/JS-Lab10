@@ -66,3 +66,13 @@ Product.applyDiscount(store.inventory, 0.15);
 console.log("Total Price Afer Discounts: $" + store.getInventoryValue().toFixed(2));
 
 // I dont understand the find product part I will do it as you told me to print 1 spesific Item
+
+const foundProduct = store.findProductByName("Milk");
+
+if (foundProduct) {
+    console.log("Product Found:");
+    console.log(foundProduct.toString());
+} else {
+    console.log("Product not found.");
+}
+//Milk has all 4 so I did milk
