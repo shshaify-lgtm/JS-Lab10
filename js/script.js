@@ -57,7 +57,7 @@ const product1 = new Product("Pencil", 1.99, 4);
 const product2 = new Product("Note Book", 2.50, 6);
 const product3 = new Product("Eraser", 3.00, 2);
 const product4 = new PerishableProduct("Milk", 3, 3, 2026-8-27);
-const product4 = new PerishableProduct("Bread", 3, 3, 2026-8-3);
+const product5 = new PerishableProduct("Bread", 3, 3, 2026-8-3);
 
 console.log("Total Price: $" + store.getInventoryValue().toFixed(2));
 
