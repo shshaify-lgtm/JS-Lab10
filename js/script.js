@@ -16,7 +16,13 @@ class Product {
     //because I struggled find the problem
 
     class PerishableProduct extends Product {
-
+        constructor(name, price, quantity, expirationDate){
+            super(name, price, quantity);
+            this.expirationDate = expirationDate;
+        }
+        toSting(){
+            return `${super.toSting()}, Expiration Date: ${this.expirationDate}`; 
+        }
     }
 
 }
