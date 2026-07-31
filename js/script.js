@@ -14,6 +14,7 @@ class Product {
     }
     // professor can you tell me where I can read more about (``) 
     //because I struggled find the problem
+
     static applyDiscount(products, discount) {
         product.forEach(product => {
             product.price = product.price * (1 - discount);
@@ -27,5 +28,13 @@ class PerishableProduct extends Product {
     }
     toString() {
         return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
+    }
+}
+class Store {
+    constructor(){
+        this.inventory = [];
+    }
+    addProduct(product){
+        this.inventory.push(product)
     }
 }
