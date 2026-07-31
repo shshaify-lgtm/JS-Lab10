@@ -37,4 +37,7 @@ class Store {
     addProduct(product){
         this.inventory.push(product)
     }
+    getInventoryValue(){
+        let total = 0;
+    }
 }
