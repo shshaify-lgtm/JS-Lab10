@@ -26,5 +26,7 @@ class PerishableProduct extends Product {
 }
 
 static applyDiscount(products, discount) {
-    
+    product.forEach(product=>{
+        product.price = product.price*(1 - discount);
+    });
 }
