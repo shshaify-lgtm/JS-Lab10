@@ -16,7 +16,7 @@ class Product {
     //because I struggled find the problem
 
     static applyDiscount(products, discount) {
-        product.forEach(product => {
+        products.forEach(product => {
             product.price = product.price * (1 - discount);
         });
     }
