@@ -15,7 +15,8 @@ class Product {
     // professor can you tell me where I can read more about (``) 
     //because I struggled find the problem
 
-    
+    class PerishableProduct extends Product {
 
+    }
 
 }
