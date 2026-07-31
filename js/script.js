@@ -53,4 +53,4 @@ class Store {
 
 const product1 = new Product("Pencil", 1.99, 4);
 const product2 = new Product("Note Book", 2.50, 6);
-const product1 = new Product("Eraser", 3.00, 2);
+const product3 = new Product("Eraser", 3.00, 2);
