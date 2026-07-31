@@ -1,28 +1,26 @@
 class Product {
-    constructor(name, price, quantity){
+    constructor(name, price, quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
-    getTotalValue(){
+    getTotalValue() {
         return this.price * this.quantity;
     }
 
-    toSting(){
+    toSting() {
         return `Product Name:  ${this.name} Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
     // professor can you tell me where I can read more about (``) 
     //because I struggled find the problem
-
-    class PerishableProduct extends Product {
-        constructor(name, price, quantity, expirationDate){
-            super(name, price, quantity);
-            this.expirationDate = expirationDate;
-        }
-        toSting(){
-            return `${super.toSting()}, Expiration Date: ${this.expirationDate}`; 
-        }
+}
+class PerishableProduct extends Product {
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity);
+        this.expirationDate = expirationDate;
     }
-
+    toSting() {
+        return `${super.toSting()}, Expiration Date: ${this.expirationDate}`;
+    }
 }
